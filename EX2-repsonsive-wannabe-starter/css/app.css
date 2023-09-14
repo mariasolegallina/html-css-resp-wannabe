@@ -1,11 +1,43 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .container {
-        max-width: 480px;
+        max-width: 100%;
+     }
+
+     .row {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 60px;
+     }
+
+     .lessons .col,
+     .steps .col,
+     .why-us .col-right,
+     .why-us .col-left {
+        width: 100%;
+     }
+
+     .lessons {
+        margin-bottom: 3rem;
+     }
+
+     body .why-us {
+        background-color: #222222;
+     }
+
+    .steps {
+        margin: 0;
+
+     }
+    .why-us {
+            padding: 3rem 0;
+            margin-bottom: 0px;
     }
 }
 
-@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 100%;
     }
 }
